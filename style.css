@@ -1,0 +1,38 @@
+:root{
+    --primary: black;
+    --secondary: hsl(236, 100%, 10%, 0.8);
+}
+
+* {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+    
+    @keyframes gradient-animation {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+.mid {
+    padding-top: 13rem;
+    background: linear-gradient(180deg, #02042b, var(--primary));
+    animation: gradient-animation-mid 5s ease infinite;
+}
+

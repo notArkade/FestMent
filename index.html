@@ -1,12 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FestMent</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Caveat&family=Libre+Baskerville&family=Poppins&display=swap"
+    rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-gradient-to-b from-[#000000] to-[#000333] min-h-screen bg-cover bg-no-repeat bg-center bg-scroll" >
+
+    <div style="background: linear-gradient(180deg, var(--primary), var(--secondary)), url(./Images/best-dance-clubs-night-clubs-san-antonio-nightlife.jpg?version=1); animation: gradient-animation 10s ease infinite;">
     
-</body>
+      <div class="relative isolate px-6 lg:px-8">
+        
+        <div class="mx-auto max-w-4xl py-16 sm:py-32 lg:py-48">
+          
+          <div class="text-center">
+            <h1 class=".fest-text text-4xl font-bold tracking-tight text-gray-200 sm:text-8xl">FestMent</h1>
+
+            
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <div >
+    
+      <script>
+        gsap.from(".fest-text", 2.0, { opacity: 0, y: -180, delay: 0.25 });
+      </script>
+      
+  </body>
+  
 </html>
