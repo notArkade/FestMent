@@ -95,7 +95,6 @@ body{
     width: 95%;
     padding: 0 10px;
     border-radius: 5px;
-    border: 0px solid #ccc;
     outline: none;
 }
 
@@ -111,7 +110,6 @@ body{
     width: 100%;
     padding: 0 10px;
     border-radius: 5px;
-    border: 0px solid #ccc;
     outline: none;
 }
 
