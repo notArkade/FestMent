@@ -32,5 +32,150 @@
       </div>
     </header>
 
+    <div class="py-24 sm:py-10">
+        <div class="mx-auto max-w-[80%] px-6 lg:px-8">
+          <div class="mx-auto lg:mx-0 text-center">
+            <div class="inline-flex items-center justify-center w-full">
+              <hr class="line-left w-64 h-1 my-8 mx-4 bg-gray-200 border-0 rounded dark:bg-gray-700">
+              <h2 class="events-head text-3xl tracking-tight text-gray-300 sm:text-6xl">Events line up</h2>
+              <hr class="line-right w-64 h-1 my-8 mx-4 bg-gray-200 border-0 rounded dark:bg-gray-700">
+            </div>
+            <p class="py-10 text-lg leading-8 text-gray-300">Discover the pulse of colleges around you with the thrilling events happening now!</p>
+          </div>
+          <div class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 pt-10 sm:my-0 sm:py-8 lg:mx-0 lg:max-w-none lg:grid-cols-4 event-cards-container">
+            <!-- Event cards will be generated dynamically here -->
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <footer class="bg-white rounded-lg shadow dark:bg-slate-950">
+      <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+          <div class="sm:flex sm:items-center sm:justify-between">
+              <a href="https://flowbite.com/" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+                  <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">FestMent</span>
+              </a>
+              <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+                  <li>
+                      <a href="#" class="hover:underline me-4 md:me-6">About</a>
+                  </li>
+                  <li>
+                      <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+                  </li>
+                  <li>
+                      <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+                  </li>
+                  <li>
+                      <a href="#" class="hover:underline">Contact</a>
+                  </li>
+              </ul>
+          </div>
+          <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+          <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="https://flowbite.com/" class="hover:underline">FestMent™</a>. All Rights Reserved.</span>
+      </div>
+  </footer>
+  
+    <script>
+      // Define an array of objects containing event details
+      const events = [
+        {
+          date: "15th - 17th March 2024",
+          eventName: "Uphoria",
+          image: "./events-images/img9.png",
+          universityLogo: "./logo-images/Bennett_University_logo.png",
+          universityName: "Bennett University",
+          location: "Greater Noida, Uttar Pradesh"
+        },
+        {
+          date: "16th - 18th February 2024",
+          eventName: "BREEZE",
+          image: "./events-images/breeze.jpg",
+          universityLogo: "./logo-images/shiv_nadar.png",
+          universityName: "Shiv Nadar University",
+          location: "Greater Noida, Uttar Pradesh"
+        },
+        {
+          date: "Yet to be declared",
+          eventName: "Unifest 2k24",
+          image: "./events-images/unifest.jpeg",
+          universityLogo: "./logo-images/galgotias_logo.png",
+          universityName: "Galgotias University",
+          location: "Greater Noida, Uttar Pradesh"
+        },
+        {
+          date: "15th - 17th March 2024",
+          eventName: "Magnus - Annual Sports Fest",
+          image: "./events-images/magnus.jpg",
+          universityLogo: "./logo-images/O._P._Jindal_Global_University_Logo.png",
+          universityName: "O.P. Jindal Global University",
+          location: "Sonipat, Haryana"
+        },
+        {
+          date: "5th - 6th April 2024",
+          eventName: "SANGAM ULLAS",
+          image: "./events-images/sharda_fest.png",
+          universityLogo: "./logo-images/Sharda_University_logo.png",
+          universityName: "Sharda University",
+          location: "Greater Noida, Uttar Pradesh"
+        },
+        {
+          date: "29th February - 1st March 2024",
+          eventName: "Amity Youth Festival (AYF)",
+          image: "./events-images/AYF.png",
+          universityLogo: "./logo-images/Amity_University_logo.png",
+          universityName: "Amity University Noida",
+          location: "Noida, Uttar Pradesh"
+        },
+        // Add more event objects as needed
+      ];
+  
+      // Function to generate HTML markup for event cards
+      function generateEventCards(events) {
+        const eventCardsContainer = document.querySelector('.event-cards-container');
+  
+        events.forEach(event => {
+          const eventCard = `
+            <article class="article flex max-w-xl flex-col items-start justify-between border border-gray-900 rounded-[10px] py-4 px-4 bg-[#ffffff10] shadow-2xl shadow-black">
+              <img class="events" src="${event.image}" alt="${event.eventName}">
+              <div class="flex items-center gap-x-4 text-xs">
+                <time datetime="${event.date}" class="text-gray-300">${event.date}</time>
+                <a href="#" class="relative z-10 border border-gray-900 rounded-full bg-[#000] px-3 py-1.5 font-medium text-gray-300">Major Event</a>
+              </div>
+              <div class="group relative">
+                <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-300 group-hover:text-gray-300">
+                  <a href="#">
+                    <span class="absolute inset-0"></span>
+                    ${event.eventName}
+                  </a>
+                </h3>
+              </div>
+              <div class="relative mt-8 flex items-center gap-x-4">
+                <img src="${event.universityLogo}" alt="${event.universityName}" class="h-10 w-15">
+                <div class="text-sm leading-6">
+                  <p class="font-semibold text-gray-300">
+                    <a href="#">
+                      <span class="absolute inset-0"></span>
+                      ${event.universityName}
+                    </a>
+                  </p>
+                  <p class="text-gray-300">${event.location}</p>
+                </div>
+              </div>
+            </article>
+          `;
+          eventCardsContainer.innerHTML += eventCard;
+        });
+      }
+  
+      // Call the function to generate event cards
+      generateEventCards(events);
+    </script>
+  
+  <script>
+    gsap.from('.line-left', 1.5, {opacity:0, x: -100, delay:0.25})
+    gsap.from('.line-right', 1.5, {opacity:0, x: 100, delay:0.25})
+    gsap.from('.article', 1.2, {opacity:0, y: 90, delay:0.25})
+  </script>
+
 </body>
 </html>
