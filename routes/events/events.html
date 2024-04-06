@@ -25,8 +25,7 @@
           <ul class="menu">
             <li><a href="../../index.html">Home</a></li>
             <li><a href="#">Events</a></li>
-            <!-- <li><a href="../sponsor/sponsor.html">Collaborate</a></li> -->
-            <li><a href="../login/login.html"><button class="login py-2 px-6 border-2 rounded-full text-gray-300">Get Started</button></a></li>
+aa            <li><a href="../login/login.html"><button class="login py-2 px-6 border-2 rounded-full text-gray-300">Get Started</button></a></li>
           </ul>
         </nav>
       </div>
@@ -43,8 +42,8 @@
             <p class="py-10 text-lg leading-8 text-gray-300">Discover the pulse of colleges around you with the thrilling events happening now!</p>
           </div>
           <div class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 pt-10 sm:my-0 sm:py-8 lg:mx-0 lg:max-w-none lg:grid-cols-4 event-cards-container">
-            <!-- Event cards will be generated dynamically here -->
-          </div>
+
+        </div>
         </div>
       </div>
     </div>
@@ -76,7 +75,7 @@
   </footer>
   
     <script>
-      // Define an array of objects containing event details
+
       const events = [
         {
           date: "15th - 17th March 2024",
@@ -126,10 +125,18 @@
           universityName: "Amity University Noida",
           location: "Noida, Uttar Pradesh"
         },
-        // Add more event objects as needed
+        {
+          date: "5th - 8th October 2023",
+          eventName: "Rendezvous'23",
+          image: "./events-images/IIT_delhi.jpeg",
+          universityLogo: "./logo-images/Indian_Institute_of_Technology_Delhi_Logo.svg.png",
+          universityName: "IIT Delhi",
+          location: "New Delhi, Delhi"
+        },
+    
       ];
   
-      // Function to generate HTML markup for event cards
+      
       function generateEventCards(events) {
         const eventCardsContainer = document.querySelector('.event-cards-container');
   
@@ -167,7 +174,6 @@
         });
       }
   
-      // Call the function to generate event cards
       generateEventCards(events);
     </script>
   
