@@ -1,0 +1,192 @@
+:root{
+    --primary: black;
+    --secondary: hsl(236, 100%, 10%, 0.8);
+}
+
+* {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    /* overflow: hidden; */
+}
+
+.pb-rem {
+    background: linear-gradient(180deg, #02042b, var(--primary));
+    animation: gradient-animation-mid 5s ease infinite;
+}
+    
+    @keyframes gradient-animation {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+.FestMent {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-right: auto;
+}
+
+/* header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding:30px 100px;
+} */
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+
+.menu li a{
+    color: white;
+    position: relative;
+    font-size: 1rem;
+    font-weight: 800;
+    margin-left: 40px;
+}
+
+.menu li a:hover {
+    color: rgb(129 140 248);
+}
+
+
+.h2 {
+    font-size: 2rem;
+    color: #fff;
+    text-align: left;
+    padding-bottom: 8px;
+    /* border-bottom: 1px solid grey; */
+}
+
+.input-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 2rem;
+}
+
+.input-box:nth-child(2n) {
+    justify-content: flex-end;
+}
+
+
+.input-box label {
+    width: 95%;
+    margin: 5px 0;
+}
+
+.input-box input {
+    height: 40px;
+    width: 95%;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 0px solid #ccc;
+    outline: none;
+}
+
+.input-box-2 {
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    padding-bottom: 15px;
+}
+
+.input-box-2 input {
+    height: 150px;
+    width: 100%;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 0px solid #ccc;
+    outline: none;
+}
+
+.input-box-2 label {
+    width: 95%;
+    margin: 5px 0;
+}
+
+.alert p{
+    font-size: 14px;
+    font-style: italic;    
+    color: #fff;
+    margin: 5px 0;
+    padding: 10px;
+    line-height: 1.5;
+}
+
+.alert a {
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(129 140 248);
+}
+
+.alert a:hover {
+    font-weight: bold;
+    text-decoration: none;
+    color: skyblue;
+}
+
+.login-button:hover {
+    background-color: white;
+    color: black;
+}
+
+.submit-button {
+    width: 20%;
+    margin-top: 10px;
+    padding: 10px;
+    display: block;
+    font-size: 20px;
+    color:#fff;
+    border: solid hsl(0, 0%, 50%) 1px;
+    border-radius: 5px;
+    background-color: #000000cc;
+    transition: 0.3s;
+}
+
+.submit-button:hover {
+    background: linear-gradient(90deg, rgb(147 51 234), rgb(109 40 217));
+    color: white;
+    border-color: black;
+}
+
+input[type=date]::-webkit-datetime-edit-text {
+    -webkit-appearance: none;
+    display: none;
+}
+input[type=date]::-webkit-datetime-edit-month-field{
+    -webkit-appearance: none;
+    display: none;
+}
+input[type=date]::-webkit-datetime-edit-day-field {
+    -webkit-appearance: none;
+    display: none;
+}
+input[type=date]::-webkit-datetime-edit-year-field {
+    -webkit-appearance: none;
+    display: none;
+}
